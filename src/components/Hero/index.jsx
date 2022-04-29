@@ -1,19 +1,31 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import Box from "@mui/material/Box"
+import "./hero.css"
 
 function Hero() {
   return (
-    <StaticImage
-      className={styles.Img}
-      layout="fixed"
-      formats={["auto", "webp", "avif"]}
-      src="../images/profile-pic.png"
-      width={90}
-      height={90}
-      quality={95}
-      alt="Profile picture"
-    ></StaticImage>
+    <Box
+      className="HeroContainer"
+      sx={{
+        background: "linear-gradient(315deg, #ddd7cd, #fffff4)",
+        width: "100%",
+        height: "90vh",
+        display: "flex",
+        justifyContent: "flex-start",
+        alignContent: "center",
+        padding: "24px",
+      }}
+    >
+      <Box
+        sx={{
+          height: "80%",
+          width: "50%",
+        }}
+        className="hero"
+      >
+        <h1 className="title">Dulce Hogar </h1>
+      </Box>
+    </Box>
   )
 }
 

@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Hero from "../components/Hero"
 
 const home = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -12,6 +13,7 @@ const home = ({ data, location }) => {
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Helmet>
       <Seo title="Home" />
+      <Hero />
     </Layout>
   )
 }

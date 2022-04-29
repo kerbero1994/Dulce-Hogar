@@ -35,7 +35,13 @@ const ResponsiveAppBar = () => {
   }
 
   return (
-    <AppBar position="static" sx={{ background: "black", width: "100%" }}>
+    <AppBar
+      position="static"
+      sx={{
+        background: "linear-gradient(225deg, #7a4a1c, #905821)",
+        width: "100%",
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
