@@ -1,17 +1,31 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Dulce Hogar`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Dulce Hogar`,
+      summary: `Amantes de la cocina`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Small Bakery business`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `DulceHogar`,
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Whisper`,
+          `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
+        ],
+        display: "swap",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {},
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
