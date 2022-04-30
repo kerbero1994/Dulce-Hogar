@@ -11,6 +11,7 @@ const home = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Helmet>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
       </Helmet>
       <Seo title="Home" />
       <Hero />

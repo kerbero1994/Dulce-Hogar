@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Whisper&display=swap");
 .hero {
   border-radius: 0% 100% 0% 100% / 77% 41% 59% 23%;
   background: linear-gradient(225deg, #ddd7cd, #fffff4);
@@ -8,9 +7,7 @@
 .HeroContainer {
   border-radius: 0% 100% 100% 0% / 100% 0% 100% 0%;
 }
-.title {
-  font-family: "Whisper", cursive;
-  font-weight: 800;
-  font-size: 45;
-  color: "#87521F";
+.Container {
+  background: "linear-gradient(225deg, #7a4a1c, #905821)";
+  width: "100%";
 }
